@@ -1,0 +1,132 @@
+includes:
+- common/defaults/configs/datasets/videoqa/vtextgqa.yml
+# Use soft copy
+dataset_attributes:
+  vtextgqa:
+    image_features:
+      train:
+      - fps10_video_vit_feat 
+      val:
+      - fps10_video_vit_feat 
+      test:
+      - fps10_video_vit_feat 
+    imdb_files:
+      train:
+      - vtextgqa/qa_annotation/ViteVQA_0.0.2_t1s2train.npy 
+      val:
+      - vtextgqa/ground_annotation/qa_sub_val.npy 
+      test:
+      - vtextgqa/ground_annotation/qa_sub_test.npy 
+    ocr_infos:
+      train:
+      - fps10_ocr_detection/train 
+      val:
+      - fps10_ocr_detection/val
+      test:
+      - fps10_ocr_detection/test
+    ground_infos:
+      val:
+      - vtextgqa/ground_annotation/grouding_anno_val.npy 
+      test:
+      - vtextgqa/ground_annotation/grouding_anno_test.npy
+    processors:
+      text_processor:
+        type: bert_tokenizer
+        params:
+          max_length: 20
+      answer_processor:
+        type: m4c_answer
+        params:
+          vocab_file: vtextgqa/vocabulary/fixed_vocab_top5k.txt
+          preprocessor:
+            type: simple_word
+            params: {}
+          context_preprocessor:
+            type: simple_word
+            params: {}
+          max_length: 960
+          max_copy_steps: 12
+          num_answers: 10
+      copy_processor:   
+        type: copy
+        params:
+          max_length: 960 
+      phoc_processor: 
+        type: phoc
+        params:
+          max_length: 960
+    frames: 64 
+    ocr_frame_num: 15
+model_attributes:
+  transtr:
+    lr_scale_frcn: 0.1
+    lr_scale_text_bert: 0.1
+    lr_scale_mmt: 1.0  
+    text_bert_init_from_bert_base: true
+    text_bert:
+      num_hidden_layers: 3
+    obj:
+      mmt_in_dim: 1074 # 1024 (ViT) + 50 (Temporal ID)
+      dropout_prob: 0.1
+    ocr:
+      mmt_in_dim: 1004  # 300 (FastText) + 604 (PHOC)  + 50 (Temporal ID) + 50 (Track ID)
+      dropout_prob: 0.1
+    translayers:
+      hidden_size: 768
+      num_hidden_layers: 2
+    grounding:
+      frame_topk: 1
+      ocr_topk: 1
+      max_ocr_num: 960 
+      frame_num: 64
+      ocr_frame_num: 15
+      hidden_size: 768
+    encoder:
+      hidden_size: 768
+      num_hidden_layers: 2
+    mmt:
+      hidden_size: 768
+      num_hidden_layers: 3
+    classifier:
+      type: linear
+      ocr_max_num: 960
+      ocr_ptr_net:
+        hidden_size: 768
+        query_key_size: 768
+      params: {}
+    model_data_dir: /data/zsheng/Data_T5_ViteVQA/data  # data root path
+    metrics:
+    - type: textvqa_accuracy
+    - type: stvqa_anls
+    - type: IOU@0.3
+    - type: IOU@0.5
+    - type: GQA@0.3
+    - type: GQA@0.5
+    losses:
+    - type: pos_bce_loss
+      weight: 1.0 
+      params: {}
+optimizer_attributes:
+  params:
+    eps: 1.0e-08
+    lr: 1e-4
+    weight_decay: 0
+  type: Adam
+training_parameters:
+    clip_norm_mode: all
+    clip_gradients: true
+    max_grad_l2_norm: 0.25
+    lr_scheduler: true
+    lr_steps:
+    - 10000
+    - 20000
+    lr_ratio: 0.1
+    use_warmup: true
+    warmup_factor: 0.2
+    warmup_iterations: 1000
+    max_iterations: 24000
+    batch_size: 48
+    num_workers: 8
+    task_size_proportional_sampling: true
+    monitored_metric: vtextgqa/textvqa_accuracy
+    metric_minimize: false

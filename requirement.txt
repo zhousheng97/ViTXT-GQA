@@ -1,0 +1,37 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: linux-64
+_libgcc_mutex=0.1=main
+bzip2=1.0.8=h7b6447c_0
+c-ares=1.18.1=h7f8727e_0
+ca-certificates=2023.12.12=h06a4308_0
+curl=7.82.0=h7f8727e_0
+expat=2.4.4=h295c915_0
+gettext=0.21.0=hf68c758_0
+git=2.34.1=pl5262hc120c5b_0
+icu=58.2=he6710b0_3
+krb5=1.19.2=hac12032_0
+ld_impl_linux-64=2.38=h1181459_1
+libcurl=7.82.0=h0b77cf5_0
+libedit=3.1.20210910=h7f8727e_0
+libev=4.33=h7f8727e_1
+libffi=3.3=he6710b0_2
+libgcc-ng=9.1.0=hdf63c60_0
+libnghttp2=1.46.0=hce63b2e_0
+libssh2=1.10.0=h8f2d780_0
+libstdcxx-ng=9.1.0=hdf63c60_0
+libxml2=2.9.14=h74e7548_0
+ncurses=6.3=h7f8727e_2
+openssl=1.1.1w=h7f8727e_0
+pcre2=10.37=he7ceb23_1
+perl=5.26.2=h14c3975_0
+pip=23.3.1=py38h06a4308_0
+python=3.8.13=h12debd9_0
+readline=8.1.2=h7f8727e_1
+setuptools=68.2.2=py38h06a4308_0
+sqlite=3.38.5=hc218d9a_0
+tk=8.6.12=h1ccaba5_0
+wheel=0.41.2=py38h06a4308_0
+xz=5.2.5=h7f8727e_1
+yaml=0.2.5=h7b6447c_0
+zlib=1.2.12=h7f8727e_2
