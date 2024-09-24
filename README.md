@@ -112,7 +112,7 @@ Note: you can access the checkpoint: [T2S_abinet](https://drive.google.com/file/
 
 ## Visualization (ViTXT-GQA)
 <p align="center">
-  <img src="https://github.com/zhousheng97/ViTXT-GQA/blob/main/image/visualization.png" alt="Visualization">
+  <img src="https://github.com/zhousheng97/ViTXT-GQA/blob/main/image.png" alt="Visualization">
 </p>
 
 
