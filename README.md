@@ -1,6 +1,6 @@
 # Scene-Text Grounding for Text-Based Video Question Answering
 
-[Paper](https://example.com)
+[Paper](https://arxiv.org/abs/2409.14319)
 
 
 ## Introduction
