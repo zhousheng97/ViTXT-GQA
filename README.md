@@ -22,16 +22,16 @@ conda activate vitxtgqa
 conda install pytorch==2.1.1 torchvision==0.16.1 torchaudio==2.1.1 pytorch-cuda=12.1 -c pytorch -c nvidia
 
 git clone https://github.com/zhousheng97/vitxtgqa.git
-cd T2S-QA
+cd ViTXT-GQA
 pip install -r requirements.txt
 python setup.py build develop
 ```
 
 ## Data Preparation
-Please create a data folder ```root/data/``` outside this repo folder ```root/T2S-QA/``` so that the two folders are in the same directory.
+Please create a data folder ```root/data/``` outside this repo folder ```root/ViTXT-GQA/``` so that the two folders are in the same directory.
 
 * **Raw Video and Video Feature**.
-You can directly download the provided video feature [video feature path](https://drive.google.com/file/d/1v7_0eiGtoDMt5kwz1jsPZ25Bo_8hXNjj/view?usp=drive_link) or apply [here](https://github.com/bytedance/VTVQA) to download the raw video and then extract features. If you download the raw videos, you need to decode each video at 10fps and then extract the frame feature of ViT via the script provided in ```T2S-QA/tools/video_feat/obtain_vit_feat.py```. Extract video feature into ```data/fps10_video_vit_feat```.
+You can directly download the provided video feature [video feature path](https://drive.google.com/file/d/1v7_0eiGtoDMt5kwz1jsPZ25Bo_8hXNjj/view?usp=drive_link) or apply [here](https://github.com/bytedance/VTVQA) to download the raw video and then extract features. If you download the raw videos, you need to decode each video at 10fps and then extract the frame feature of ViT via the script provided in ```ViTXT-GQA/tools/video_feat/obtain_vit_feat.py```. Extract video feature into ```data/fps10_video_vit_feat```.
 
 * **OCR Detection and Recognition**.
 Based on the OCR detector [TransVTSpotter](https://github.com/weijiawu/TransVTSpotter), we provide the recognition results of OCR recognition systems [ABINet](https://github.com/FangShancheng/ABINet) and [CLIPOCR](https://github.com/wzx99/CLIPOCR), the download links are: 
@@ -40,12 +40,12 @@ Based on the OCR detector [TransVTSpotter](https://github.com/weijiawu/TransVTSp
 * **Dataset Annotation**.
 We provide the dataset files [here](https://drive.google.com/drive/folders/1JOOifZJOk6pvqHE2MDjpyVi4BcahfKge?usp=drive_link), including grounding annotation files, QA files, and vocabulary files.
 
-* **Other**. The fixed vocabulary is obtained by ```T2S-QA/pythia/scripts/extract_vocabulary.py```
+* **Other**. The fixed vocabulary is obtained by ```ViTXT-GQA/pythia/scripts/extract_vocabulary.py```
 
 Repo structure as below:
 ```
 root
-├── T2S-QA
+├── ViTXT-GQA
 ├── data
 │   └── fps10_ocr_detection
 │   └── fps10_ocr_detection_ClipOCR
