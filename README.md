@@ -23,7 +23,7 @@ conda install pytorch==2.1.1 torchvision==0.16.1 torchaudio==2.1.1 pytorch-cuda=
 
 git clone https://github.com/zhousheng97/vitxtgqa.git
 cd ViTXT-GQA
-pip install -r requirements.txt
+pip install -r requirement.txt
 python setup.py build develop
 ```
 
