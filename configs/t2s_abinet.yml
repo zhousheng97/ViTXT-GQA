@@ -107,7 +107,7 @@ model_attributes:
       weight: 1.0 
       params: {}
     - type: InfoNCE
-      weight: 1000
+      weight: 100 # 1000
       params: {}
 optimizer_attributes:
   params:
