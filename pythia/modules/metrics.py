@@ -248,9 +248,9 @@ class BoxGroundAccuracy(BaseMetric):
     
     def calculate(self, sample_list, model_output, *args, **kwargs):
         if sample_list['dataset_type'] == 'val':
-            self.ground_info_dir = '/data/zsheng/Data_T5_ViteVQA/data/m4vitevqa/ground_annotation/grouding_anno_t1s2val.npy'
+            self.ground_info_dir = 'data/vitxtgqa/ground_annotation/grouding_anno_val.npy'
         else:
-            self.ground_info_dir = '/data/zsheng/Data_T5_ViteVQA/data/m4vitevqa/ground_annotation/grouding_anno_t1s2test.npy'
+            self.ground_info_dir = 'data/vitxtgqa/ground_annotation/grouding_anno_test.npy'
         self.ground_info = np.load(self.ground_info_dir, allow_pickle=True)[1:]
 
         batch_size = sample_list.frame_num.size(0)
@@ -301,9 +301,9 @@ class BoxGroundAccuracy(BaseMetric):
     
     def calculate(self, sample_list, model_output, *args, **kwargs):
         if sample_list['dataset_type'] == 'val':
-            self.ground_info_dir = '/data/zsheng/Data_T5_ViteVQA/data/m4vitevqa/ground_annotation/grouding_anno_t1s2val.npy'
+            self.ground_info_dir = 'data/vitxtgqa/ground_annotation/grouding_anno_val.npy'
         else:
-            self.ground_info_dir = '/data/zsheng/Data_T5_ViteVQA/data/m4vitevqa/ground_annotation/grouding_anno_t1s2test.npy'
+            self.ground_info_dir = 'data/vitxtgqa/ground_annotation/grouding_anno_test.npy'
         self.ground_info = np.load(self.ground_info_dir, allow_pickle=True)[1:]
 
         batch_size = sample_list.frame_num.size(0)
@@ -358,9 +358,9 @@ class BoxGroundAccuracy(BaseMetric):
     
     def calculate(self, sample_list, model_output, *args, **kwargs):
         if sample_list['dataset_type'] == 'val':
-            self.ground_info_dir = '/data/zsheng/Data_T5_ViteVQA/data/m4vitevqa/ground_annotation/grouding_anno_t1s2val.npy'
+            self.ground_info_dir = 'data/vitxtgqa/ground_annotation/grouding_anno_val.npy'
         else:
-            self.ground_info_dir = '/data/zsheng/Data_T5_ViteVQA/data/m4vitevqa/ground_annotation/grouding_anno_t1s2test.npy'
+            self.ground_info_dir = 'data/vitxtgqa/ground_annotation/grouding_anno_test.npy'
         self.ground_info = np.load(self.ground_info_dir, allow_pickle=True)[1:]
 
         batch_size = sample_list.frame_num.size(0)
@@ -461,9 +461,9 @@ class BoxGroundAccuracy(BaseMetric):
     
     def calculate(self, sample_list, model_output, *args, **kwargs):
         if sample_list['dataset_type'] == 'val':
-            self.ground_info_dir = '/data/zsheng/Data_T5_ViteVQA/data/m4vitevqa/ground_annotation/grouding_anno_t1s2val.npy'
+            self.ground_info_dir = 'data/vitxtgqa/ground_annotation/grouding_anno_val.npy'
         else:
-            self.ground_info_dir = '/data/zsheng/Data_T5_ViteVQA/data/m4vitevqa/ground_annotation/grouding_anno_t1s2test.npy'
+            self.ground_info_dir = 'data/vitxtgqa/ground_annotation/grouding_anno_test.npy'
         self.ground_info = np.load(self.ground_info_dir, allow_pickle=True)[1:]
 
         batch_size = sample_list.frame_num.size(0)
