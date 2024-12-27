@@ -32,6 +32,7 @@ Please create a data folder ```root/data/``` outside this repo folder ```root/Vi
 
 * **Raw Video and Video Feature**.
 You can directly download the provided video feature [video feature path](https://drive.google.com/file/d/1v7_0eiGtoDMt5kwz1jsPZ25Bo_8hXNjj/view?usp=drive_link) or apply [here](https://github.com/bytedance/VTVQA) to download the raw video and then extract features. If you download the raw videos, you need to decode each video at 10fps and then extract the frame feature of ViT via the script provided in ```ViTXT-GQA/tools/video_feat/obtain_vit_feat.py```. Extract video feature into ```data/fps10_video_vit_feat```.
+（Note: The extracted video frame ids start from 1, while the video frames and bounding box annotation ids in the grounding file start from 0. ）
 
 * **OCR Detection and Recognition**.
 Based on the OCR detector [TransVTSpotter](https://github.com/weijiawu/TransVTSpotter), we provide the recognition results of OCR recognition systems [ABINet](https://github.com/FangShancheng/ABINet) and [CLIPOCR](https://github.com/wzx99/CLIPOCR), the download links are: 
