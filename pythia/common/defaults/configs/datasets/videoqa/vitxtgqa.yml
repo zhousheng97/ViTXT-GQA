@@ -1,6 +1,6 @@
 dataset_attributes:
-  vtextgqa:
-      data_root_dir: /data/zsheng/Data_T5_ViteVQA/data
+  vitxtgqa:
+      data_root_dir: /data/
       image_depth_first: false
       fast_read: false
       features_max_len: 100
