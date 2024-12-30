@@ -1,4 +1,7 @@
-# Scene-Text Grounding for Text-Based Video Question Answering
+# ViTXT-GQA: Scene-Text Grounding for Text-Based Video Question Answering
+![Task](https://img.shields.io/badge/Task-Multi--Modal-red)
+![Task](https://img.shields.io/badge/Task-Grounded--TextVideoQA-red)
+![Dataset](https://img.shields.io/badge/Dataset-ViTXT--GQA-blue)
 
 [Paper](https://arxiv.org/abs/2409.14319)
 
