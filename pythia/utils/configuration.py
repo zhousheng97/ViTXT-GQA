@@ -7,7 +7,7 @@ from ast import literal_eval
 
 import yaml
 
-import demjson
+import ujson
 import torch
 from pythia.common.registry import registry
 from pythia.utils.general import get_pythia_root
@@ -158,7 +158,7 @@ class Configuration:
         if cmd_config is None:
             return
 
-        cmd_config = demjson.decode(cmd_config)
+        cmd_config = ujson.decode(cmd_config)
         self.config = self.nested_dict_update(self.config, cmd_config)
 
     def nested_dict_update(self, dictionary, update):
