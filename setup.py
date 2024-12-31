@@ -15,7 +15,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "pythia"))
 with open("README.md", encoding="utf8") as f:
     readme = f.read()
 
-with open("LICENSE") as f:
+with open("LICENSE.txt") as f:
     license = f.read()
 
 DISTNAME = "pythia"
