@@ -42,9 +42,7 @@ Based on the OCR detector [TransVTSpotter](https://github.com/weijiawu/TransVTSp
 [vitxtgqa_abinet](https://drive.google.com/file/d/1MNgnMgON38iiWbKGMwFVKtuQiorC4UyG/view?usp=drive_link) and [vitxtgqa_clip](https://drive.google.com/file/d/1h3L9CN_Z0ihrmKsNruXf3UnF2rjulXik/view?usp=drive_link).
 
 * **Dataset Annotation**.
-We provide the dataset files [here](https://drive.google.com/drive/folders/1JOOifZJOk6pvqHE2MDjpyVi4BcahfKge?usp=drive_link), including grounding annotation files, QA files, and vocabulary files.
-
-（Note: The extracted video frame ids start from 1, while the video frames and bounding box annotation ids in the grounding file start from 0. ）
+We provide the dataset files [here](https://drive.google.com/drive/folders/1JOOifZJOk6pvqHE2MDjpyVi4BcahfKge?usp=drive_link), including grounding annotation files, QA files, and vocabulary files. (Note: The extracted video frame ids start from 1, while the video frames and bounding box annotation ids in the grounding file start from 0.)
 
 * **Other**. The fixed vocabulary is obtained by ```ViTXTGQA/pythia/scripts/extract_vocabulary.py```
 
