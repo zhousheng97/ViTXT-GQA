@@ -3,7 +3,7 @@
 ![Task](https://img.shields.io/badge/Task-Grounded--TextVideoQA-red)
 ![Dataset](https://img.shields.io/badge/Dataset-ViTXT--GQA-blue)
 
-[Paper](https://arxiv.org/abs/2409.14319)
+This is the official repository of [Paper](https://arxiv.org/abs/2409.14319).
 
 
 ## Introduction
