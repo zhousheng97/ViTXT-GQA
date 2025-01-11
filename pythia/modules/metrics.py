@@ -436,13 +436,13 @@ class BoxGroundAccuracy(BaseMetric):
         return box_accuracy
     
 
-@registry.register_metric("box_gqa_R@k_IOU@0.5")
+@registry.register_metric("GQA@0.5")
 class BoxGroundAccuracy(BaseMetric):
     '''
     the IoU of the grounded bbox and the labeled bbox are greater than 0.5 indicates that the location is correct
     '''
     def __init__(self):
-        super().__init__("box_gqa_R@k_IOU@0.5")
+        super().__init__("GQA@0.5")
         import pythia.utils.m4c_evaluators as evaluators
         self.box_evaluator = evaluators.BoxGroundAccuracyEvaluator()
         self.qa_evaluator = evaluators.TextVQAAccuracyEvaluator()
@@ -539,13 +539,13 @@ class BoxGroundAccuracy(BaseMetric):
 
         return gqa_accuracy
 
-@registry.register_metric("box_gqa_R@k_IOU@0.3")
+@registry.register_metric("GQA@0.3")
 class BoxGroundAccuracy(BaseMetric):
     '''
     the IoU of the grounded bbox and the labeled bbox are greater than 0.5 indicates that the location is correct
     '''
     def __init__(self):
-        super().__init__("box_gqa_R@k_IOU@0.3")
+        super().__init__("GQA@0.3")
         import pythia.utils.m4c_evaluators as evaluators
         self.box_evaluator = evaluators.BoxGroundAccuracyEvaluator()
         self.qa_evaluator = evaluators.TextVQAAccuracyEvaluator()
@@ -643,13 +643,13 @@ class BoxGroundAccuracy(BaseMetric):
         return gqa_accuracy
     
 
-@registry.register_metric("box_gqa_R@k_IOU@0.1")
+@registry.register_metric("GQA@0.1")
 class BoxGroundAccuracy(BaseMetric):
     '''
     the IoU of the grounded bbox and the labeled bbox are greater than 0.5 indicates that the location is correct
     '''
     def __init__(self):
-        super().__init__("box_gqa_R@k_IOU@0.1")
+        super().__init__("GQA@0.1")
         import pythia.utils.m4c_evaluators as evaluators
         self.box_evaluator = evaluators.BoxGroundAccuracyEvaluator()
         self.qa_evaluator = evaluators.TextVQAAccuracyEvaluator()
