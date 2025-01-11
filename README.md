@@ -3,7 +3,7 @@
 ![Task](https://img.shields.io/badge/Task-Grounded--TextVideoQA-red)
 ![Dataset](https://img.shields.io/badge/Dataset-ViTXT--GQA-blue)
 
-This is the official repository of [Paper](https://arxiv.org/abs/2409.14319).
+This repo is the official implementation of the paper [Scene-Text Grounding for Text-Based Video Question Answering](https://arxiv.org/abs/2409.14319).
 
 
 ## Introduction
