@@ -5,9 +5,13 @@
 
 This repo is the official implementation of the paper [Scene-Text Grounding for Text-Based Video Question Answering](https://arxiv.org/abs/2409.14319).
 
+<p align="center">
+  <img src="https://github.com/zhousheng97/ViTXT-GQA/blob/main/vitxtgqa.png" alt="Visualization" width="500">
+</p>
 
 ## Introduction
 In this work, we propose a novel **Grounded TextVideoQA** task by forcing the models to answer the questions and spatio-temporally localize the relevant scene texts, thus promoting a research trend towards interpretable QA. The task not only encourages visual evidence for answer predictions, but also isolates the challenges inherited in QA and scene text recognition, enabling the diagnosis of the root causes for failure predictions, 𝑒.𝑔., wrong QA or wrong scene text recognition? To achieve grounded TextVideoQA, we propose a baseline model, **T2S-QA**. The model highlights a disentangled temporal- and spatial-contrastive learning strategy for weakly grounding and grounded QA. Finally, to evaluate grounded TextVideoQA, we construct a new dataset **ViTXT-GQA**, by extending the existing largest TextVideoQA dataset with answer grounding (spatio-temporal location) labels. 
+
 
 This repository provides the code for our paper, including:
 
