@@ -120,6 +120,24 @@ bash scripts/val_t2s_abinet.sh 0,1 vitxtgqa_debug save/vitxtgqa_debug_abinet/vit
 ```
 Note: you can access the checkpoint: [T2S_abinet](https://drive.google.com/file/d/1ye-E9L_9HbHiPDLRCpRYpwLdpyjP339q/view?usp=drive_link) and [T2S_clipocr](https://drive.google.com/file/d/1YjFLcCemcD-KVBqTojVre3YZzHQCnFQK/view?usp=drive_link).
 
+## Experiment Results
+- **Performance of VLMs on ViTXT-GQA.**
+<p align="center">
+<img src="https://github.com/zhousheng97/EgoTextVQA/blob/main/asset/model_eval1.png" alt="Sample Image" width="900">
+</p>
+
+
+- **Performance of Qwen2-VL and GPT-4o-mini on ViTXT-GQA.**
+<p align="center">
+<img src="https://github.com/zhousheng97/ViTXT-GQA/blob/main/asset/model_eval2.png" alt="Sample Image" width="900">
+</p>
+
+- **Human Study and OCR System Upper-bound on ViTXT-GQA.**
+<p align="center">
+<img src="https://github.com/zhousheng97/ViTXT-GQA/blob/main/asset/model_eval3.png" alt="Sample Image" width="500">
+</p>
+
+
 ## Visualization (ViTXT-GQA)
 <p align="center">
   <img src="https://github.com/zhousheng97/ViTXT-GQA/blob/main/image.png" alt="Visualization">
