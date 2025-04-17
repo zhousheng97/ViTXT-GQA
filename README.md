@@ -123,18 +123,18 @@ Note: you can access the checkpoint: [T2S_abinet](https://drive.google.com/file/
 ## Experiment Results
 - **Performance of VLMs on ViTXT-GQA.**
 <p align="center">
-<img src="https://github.com/zhousheng97/EgoTextVQA/blob/main/asset/model_eval1.png" alt="Sample Image" width="900">
+<img src="https://github.com/zhousheng97/ViTXT-GQA/blob/main/assets/model_eval1.jpg" alt="Sample Image" width="900">
 </p>
 
 
 - **Performance of Qwen2-VL and GPT-4o-mini on ViTXT-GQA.**
 <p align="center">
-<img src="https://github.com/zhousheng97/ViTXT-GQA/blob/main/asset/model_eval2.png" alt="Sample Image" width="900">
+<img src="https://github.com/zhousheng97/ViTXT-GQA/blob/main/asset/model_eval2.jpg" alt="Sample Image" width="900">
 </p>
 
 - **Human Study and OCR System Upper-bound on ViTXT-GQA.**
 <p align="center">
-<img src="https://github.com/zhousheng97/ViTXT-GQA/blob/main/asset/model_eval3.png" alt="Sample Image" width="500">
+<img src="https://github.com/zhousheng97/ViTXT-GQA/blob/main/asset/model_eval3.jpg" alt="Sample Image" width="500">
 </p>
 
 
