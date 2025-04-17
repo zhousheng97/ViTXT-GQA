@@ -2,6 +2,8 @@
 ![Task](https://img.shields.io/badge/Task-Multi--Modal-red)
 ![Task](https://img.shields.io/badge/Task-Grounded--TextVideoQA-red)
 ![Dataset](https://img.shields.io/badge/Dataset-ViTXT--GQA-blue)
+![Model](https://img.shields.io/badge/Model-Qwen2--VL-green)
+![Model](https://img.shields.io/badge/Model-GPT--4o--mini-green)
 
 This repo is the official implementation of the paper [Scene-Text Grounding for Text-Based Video Question Answering](https://arxiv.org/abs/2409.14319).
 
