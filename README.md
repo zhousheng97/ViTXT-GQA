@@ -5,7 +5,7 @@
 ![Model](https://img.shields.io/badge/Model-Qwen2--VL-green)
 ![Model](https://img.shields.io/badge/Model-GPT--4o--mini-green)
 
-This repo is the official implementation of the paper [Scene-Text Grounding for Text-Based Video Question Answering](https://arxiv.org/abs/2409.14319).
+This repo is the official implementation of the paper [Scene-Text Grounding for Text-Based Video Question Answering](https://arxiv.org/abs/2409.14319).  Our paper is accepted by IEEE TMM! 🎉
 
 <p align="center">
   <img src="https://github.com/zhousheng97/ViTXT-GQA/blob/main/vitxtgqa.png" alt="Visualization" width="500">
