@@ -151,10 +151,11 @@ The model implementation of our T2S-QA is inspired by [MMF](https://github.com/f
 If you found this work useful, consider giving this repository a star and citing our papers as follows:
 
 ```
-@article{zhou2024scene,
-  title={Scene-Text Grounding for Text-Based Video Question Answering},
+@article{zhou2025scene,
+  title={Scene-text grounding for text-based video question answering},
   author={Zhou, Sheng and Xiao, Junbin and Yang, Xun and Song, Peipei and Guo, Dan and Yao, Angela and Wang, Meng and Chua, Tat-Seng},
-  journal={arXiv preprint arXiv:2409.14319},
-  year={2024}
+  journal={IEEE Transactions on Multimedia},
+  year={2025},
+  publisher={IEEE}
 }
 ```
